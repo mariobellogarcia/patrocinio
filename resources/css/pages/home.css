@@ -1,0 +1,13 @@
+.hero-background {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgb(157 78 221 / 35%),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            var(--color-primary-dark),
+            var(--color-primary)
+        );
+}

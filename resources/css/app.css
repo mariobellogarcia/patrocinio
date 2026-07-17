@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+/* COLORES */
+@import "./system/color.css";
+/* PÁGINAS */
+@import "./pages/home.css";
