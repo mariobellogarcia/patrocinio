@@ -18,6 +18,7 @@ final class RegistrationController extends Controller
     /**
      * Muestra el formulario con las categorías activas.
      */
+
     public function create(): View
     {
         $categories = Category::query()
@@ -50,27 +51,27 @@ final class RegistrationController extends Controller
 
             $player = Player::create([
                 'category_id' =>
-                    $data['player']['category_id'],
+                $data['player']['category_id'],
 
                 'first_name' =>
-                    $data['player']['first_name'],
+                $data['player']['first_name'],
 
                 'last_name' =>
-                    $data['player']['last_name'],
+                $data['player']['last_name'],
 
                 'second_last_name' =>
-                    $data['player']['second_last_name'] ?? null,
+                $data['player']['second_last_name'] ?? null,
 
                 'birth_date' => $birthDate,
 
                 'gender' =>
-                    $data['player']['gender'],
+                $data['player']['gender'],
 
                 'dni' =>
-                    $data['player']['dni'] ?? null,
+                $data['player']['dni'] ?? null,
 
                 'contact_phone' =>
-                    $data['player']['contact_phone'],
+                $data['player']['contact_phone'],
 
                 'equipment_size' => null,
                 'tracksuit_size' => null,
@@ -87,37 +88,37 @@ final class RegistrationController extends Controller
                 'player_id' => $player->id,
 
                 'relationship' =>
-                    $data['guardian']['relationship'],
+                $data['guardian']['relationship'],
 
                 'first_name' =>
-                    $data['guardian']['first_name'],
+                $data['guardian']['first_name'],
 
                 'last_name' =>
-                    $data['guardian']['last_name'],
+                $data['guardian']['last_name'],
 
                 'second_last_name' =>
-                    $data['guardian']['second_last_name'] ?? null,
+                $data['guardian']['second_last_name'] ?? null,
 
                 'dni' =>
-                    $data['guardian']['dni'],
+                $data['guardian']['dni'],
 
                 'phone' =>
-                    $data['guardian']['phone'],
+                $data['guardian']['phone'],
 
                 'secondary_phone' =>
-                    $data['guardian']['secondary_phone'] ?? null,
+                $data['guardian']['secondary_phone'] ?? null,
 
                 'email' =>
-                    $data['guardian']['email'],
+                $data['guardian']['email'],
 
                 'address' =>
-                    $data['guardian']['address'],
+                $data['guardian']['address'],
 
                 'city' =>
-                    $data['guardian']['city'],
+                $data['guardian']['city'],
 
                 'postal_code' =>
-                    $data['guardian']['postal_code'],
+                $data['guardian']['postal_code'],
 
                 'school_rules_accepted' => true,
                 'school_rules_accepted_at' => now(),
@@ -128,7 +129,7 @@ final class RegistrationController extends Controller
                 'image_consent' => $imageConsent,
 
                 'image_consent_at' =>
-                    $imageConsent ? now() : null,
+                $imageConsent ? now() : null,
 
                 'legal_text_version' => '2026-01',
             ]);
