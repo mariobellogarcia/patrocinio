@@ -121,6 +121,8 @@ return [
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
+        
     ],
 
+    'install_admin_token' => env('INSTALL_ADMIN_TOKEN'),
 ];

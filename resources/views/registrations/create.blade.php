@@ -22,6 +22,7 @@
 </head>
 
 <body class="min-h-screen bg-background text-text-primary">
+    
 
     <main class="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:py-16">
 

@@ -20,6 +20,7 @@
 
 <body class="min-h-screen bg-background">
 
+<x-app-header mode="public" />
     <main>
 
         <section class="hero-background flex min-h-screen items-center px-6 py-20">

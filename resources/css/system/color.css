@@ -1,31 +1,11 @@
-
-
 :root {
-
-
-
     --text-primary: #1F2937;
     --text-secondary: #6B7280;
     --text-white: #FFFFFF;
+
     --background: #F8F9FA;
-    --text-club: #8B328C
 
-}
-
-/*==================================================
-    TAILWIND TOKENS
-==================================================*/
-
-@theme {
-
-
-
-    
-
-    --color-text-primary: var(--text-primary);
-    --color-text-secondary: var(--text-secondary);
-    --color-text-white: var(--text-white);
-    --color-background: var(--background);
-    --color-club: #8B328C
-
+    --color-primary: #8B328C;
+    --color-primary-dark: #6F256F;
+    --color-primary-light: #F5EAF5;
 }

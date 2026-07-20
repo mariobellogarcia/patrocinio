@@ -1,6 +1,21 @@
-@import 'tailwindcss';
-
-/* COLORES */
+@import "tailwindcss";
 @import "./system/color.css";
-/* PÁGINAS */
 @import "./pages/home.css";
+
+/* Tokens personalizados de Tailwind 4 */
+@theme {
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-white: var(--text-white);
+
+    --color-page: var(--background);
+
+    --color-club: var(--color-primary);
+    --color-club-dark: var(--color-primary-dark);
+    --color-club-light: var(--color-primary-light);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
