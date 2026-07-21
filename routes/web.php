@@ -9,6 +9,7 @@ use App\Http\Controllers\InstallAdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PlayerController;
+use App\Http\Controllers\SchoolController;
 
 
 Route::get('/', [HomeController::class, 'index'])
@@ -68,3 +69,6 @@ Route::patch('/jugadores/{player}/desactivar', [PlayerController::class, 'deacti
     ->name('players.deactivate');
 
     });
+
+Route::get('/la-escuela', [SchoolController::class, 'index'])
+    ->name('school.index');

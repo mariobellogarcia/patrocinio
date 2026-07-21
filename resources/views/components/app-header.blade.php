@@ -19,59 +19,42 @@ class="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-8"    >
             >
                 @csrf
 
-                {{-- Correo electrónico --}}
-                <div class="relative w-64">
-                    
+                 {{-- Correo electrónico --}}
+    <div class="relative w-full sm:w-64">
 
-                    <input
-                        id="header_email"
-                        type="email"
-                        name="email"
-                        value="{{ old('email') }}"
-                        placeholder="   Correo electrónico"
-                        autocomplete="email"
-                        required
-                        class="h-8 w-full rounded-xl border  bg-white py-3 pl-12 pr-4 text-sm font-medium text-slate-800 shadow-sm outline-none transition duration-200 placeholder:text-slate-400 hover:border-amber-50"
-                    >
-                </div>
+        <input
+            id="header_email"
+            type="email"
+            name="email"
+            value="{{ old('email') }}"
+            placeholder="Correo electrónico"
+            autocomplete="email"
+            required
+            class="h-10 w-full min-w-0 rounded-xl border border-white/40 bg-white px-4 text-sm font-medium text-slate-800 shadow-sm outline-none transition duration-200 placeholder:text-slate-400 focus:border-white focus:ring-2 focus:ring-white/30"
+        >
 
-                {{-- Contraseña --}}
-                <div class="relative w-56">
+    </div>
 
-                    <input
-                        id="header_password"
-                        type="password"
-                        name="password"
-                        placeholder="   Contraseña"
-                        autocomplete="current-password"
-                        required
-                        class="h-8 w-full rounded-xl border border-white/40 bg-white py-3 pl-12 pr-4 text-sm font-medium text-slate-800 shadow-sm outline-none transition duration-200 placeholder:text-slate-400 hover:border-amber-50"
-                    >
-                </div>
+    {{-- Contraseña --}}
+    <div class="relative w-full sm:w-56">
+
+        <input
+            id="header_password"
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            autocomplete="current-password"
+            required
+            class="h-10 w-full min-w-0 rounded-xl border border-white/40 bg-white px-4 text-sm font-medium text-slate-800 shadow-sm outline-none transition duration-200 placeholder:text-slate-400 focus:border-white focus:ring-2 focus:ring-white/30"
+        >
+
+    </div>
 
                <button
     type="submit"
     class="group relative flex h-12 items-center gap-2 border-0 bg-transparent px-2 text-sm font-bold text-white transition duration-300 focus:outline-none"
 >
-    <svg
-        class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.8"
-        aria-hidden="true"
-    >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 9V5.25A2.25 2.25 0 0 0
-               13.5 3h-6A2.25 2.25 0 0 0
-               5.25 5.25v13.5A2.25 2.25 0 0 0
-               7.5 21h6a2.25 2.25 0 0 0
-               2.25-2.25V15m3 0 3-3m0 0-3-3
-               m3 3H9"
-        />
-    </svg>
+    
 
     <span>
         Iniciar sesión

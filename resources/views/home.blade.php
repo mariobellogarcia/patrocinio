@@ -23,7 +23,7 @@
 <x-app-header mode="public" />
     <main>
 
-        <section class="hero-background flex min-h-screen items-center px-6 py-20">
+        <section class="flex min-h-screen items-center px-6 py-20">
 
             <div class="mx-auto w-full max-w-7xl">
 
@@ -48,7 +48,13 @@
                     >
                         Realizar inscripción
                     </a>
-
+                     {{-- Botón morado --}}
+    <a
+        href="{{ route('school.index') }}"
+        class="inline-flex items-center justify-center rounded-xl bg-[#8B328C] px-8 py-4 font-bold text-white shadow-lg transition duration-300 hover:bg-[#742875]"
+    >
+        Conocer la escuela
+    </a>
                 </div>
 
             </div>
